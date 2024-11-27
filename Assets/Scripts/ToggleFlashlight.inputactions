@@ -1,0 +1,45 @@
+{
+    "name": "ToggleFlashlight",
+    "maps": [
+        {
+            "name": "ToggleFlashlight",
+            "id": "ad85ffaa-66ee-4109-9a1b-bd6074444ac4",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "7c3ce62a-92c0-4669-a043-846500331fd1",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7523a34f-d9db-4c61-998f-b149310f5179",
+                    "path": "<OculusTouchController>/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "352ef565-1972-4779-b869-93ea79efcd62",
+                    "path": "<OculusTouchController>/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
