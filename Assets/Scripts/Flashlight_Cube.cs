@@ -6,6 +6,8 @@ public class Flashlight_Cube : MonoBehaviour
 {
     public Material lens;
     public ParticleSystem particles;
+    private float contador = 0;
+    public GameObject objetoAparecer;
 
     private Light _light;
     private AudioSource _audioSource;
@@ -16,13 +18,23 @@ public class Flashlight_Cube : MonoBehaviour
         _audioSource = GetComponent<AudioSource>();
 
         particles.Stop();
+        objetoAparecer.SetActive(false);
+    }
+
+    void Update()
+    {
+        if (contador == 1)
+        {
+            objetoAparecer.SetActive(true);
+        }
     }
 
     public void LightOn()
-    { 
+    {
         _audioSource.Play();
         lens.EnableKeyword("_EMISSION");
         _light.enabled = true;
+        contador = 1f;
 
         particles.Play();
     }
